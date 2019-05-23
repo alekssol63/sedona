@@ -1,8 +1,8 @@
 {
   "name": "sedona",
-  "version": "1.0",
+  "version": "16.0.0",
   "private": true,
-  "description": "Sedona",
+  "description": "sedona",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "9.5.x",
