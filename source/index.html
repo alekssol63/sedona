@@ -2,9 +2,127 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Sedona</title>
+    <link rel="preload" href="fonts/pt_sans-web-regular-webfont.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/pt_sans-web-bold-webfont.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    hello
+    <header class="header">
+      <nav class="navigation">
+        <ul class="navigation__list navigation__list--left">
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Главная</a>
+            <button class="navigation__close-button" type="button" name="button"></button>
+          </li>
+          <li class="navigation__item"><a href="#" class="navigation__link">Фото и видео</a></li>
+        </ul>
+        <ul class="navigation__list navigation__list--right">
+          <li class="navigation__item"><a href="#" class="navigation__link">Форма отзыва</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link">HTML academy</a></li>
+        </ul>
+      </nav>
+      <div class="header__top-menu">
+        <button class="header__button" type="button" name="button" aria-label="Открыть меню"></button>
+      </div>
+    </header>
+    <main class="main">
+      <h1 class="visually-hidden">Седона</h1>
+      <section class="advantages">
+        <h2 class="visually-hidden">Преимущества Седоны</h2>
+        <b class="adventages__intro-slogan">Седона — небольшой&nbsp;городок в Аризоне, заслуживающий большего!</b>
+        <p class="adventages__intro">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        <div class="advantages__item advantages__item--first">
+          <div class="advantages__text-wrapper">
+              <h3 class="advantages__item-header">Настоящий городок</h3>
+              <p class="advantages__item-number">&#8212;№1&#8212;</p>
+              <p class="advantages__item-text advantages__item-text--full">Седона не аттракцион для туристов, там течет своя жизнь</p>
+          </div>
+          <picture class="gallery__picture">
+          <!--  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-city@1x-desktop.webp 1x, img/photo-city@2x-desktop.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-city@1x-tablet.webp 1x, img/photo-city@2x-tablet.webp 2x">
+            <source type="image/webp" srcset="img/photo-city@1x.webp 1x, img/photo-city@1x.webp 2x">-->
+            <source media="(min-width: 1200px)" srcset="img/photo-city@1x-desktop.jpg 1x, img/photo-city@2x-desktop.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-city@1x-tablet.jpg 1x, img/photo-city@2x-tablet.jpg 2x">
+            <img class="advantages__image" src="img/photo-city@1x.jpg" srcset="img/photo-city@1x.jpg 2x" alt="Город" width="320" height="260">
+          </picture>
+          <!--<img class="advantages__image" src="img/photo-city@1x.jpg" alt="Город" width="320" height="260">-->
+        </div>
+        <ul class="advantages__varia">
+          <li class="advantages__varia-item">
+            <h4 class="advantages__varia-header">Жилье</h4>
+            <p class="advantages__varia-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          </li>
+          <li class="advantages__varia-item">
+            <h4 class="advantages__varia-header">Сувениры</h4>
+            <p class="advantages__varia-text">Не только китайского, но и местного производства!</p>
+          </li>
+          <li class="advantages__varia-item">
+            <h4 class="advantages__varia-header">Еда</h4>
+            <p class="advantages__varia-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          </li>
+        </ul>
+        <div class="advantages__item advantages__item">
+          <div class="advantages__text-wrapper">
+            <h3 class="advantages__item-header">Там&nbsp;есть мост&nbsp;дьявола</h3>
+            <p class="advantages__item-number">&#8212;№2&#8212;</p>
+            <p class="advantages__item-text advantages__item-text--full">Да, по нему можно пройти! если вы осмелитесь, конечно</p>
+          </div>
+          <picture class="gallery__picture">
+          <!--  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-bridge@1x-desktop.webp 1x, img/photo-bridge@2x-desktop.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bridge@1x-tablet.webp 1x, img/photo-bridge@2x-tablet.webp 2x">
+            <source type="image/webp" srcset="img/photo-city@1x.webp 1x, img/photo-bridge@2x.webp 2x">-->
+            <source media="(min-width: 1200px)" srcset="img/photo-bridge@1x-desktop.jpg 1x, img/photo-bridge@2x-desktop.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-bridge@1x-tablet.jpg 1x, img/photo-bridge@2x-tablet.jpg 2x">
+            <img class="advantages__image" src="img/photo-bridge@1x.jpg" srcset="img/photo-bridge@2x.jpg 2x" alt="Город" width="320" height="260">
+          </picture>
+          <!--<img class="advantages__image" src="img/photo-bridge@1x.jpg" alt="Мост дьявола" width="320" height="260">-->
+        </div>
+        <div class="advantages__item advantages__item--short">
+          <div class="advantages__text-wrapper advantages__text-wrapper--short">
+            <h3 class="advantages__item-header advantages__item-header--short">Небольшая площадь</h3>
+            <p class="advantages__item-number advantages__item-number--short">&#8212;№3&#8212;</p>
+            <p class="advantages__item-text advantages__item-text--short">Все интересные места находятся очень близко</p>
+          </div>
+        </div>
+        <div class="advantages__item advantages__item--short">
+          <div class="advantages__text-wrapper advantages__text-wrapper--short">
+            <h3 class="advantages__item-header advantages__item-header--short">Красивая дорога</h3>
+            <p class="advantages__item-number advantages__item-number--short">&#8212;№4&#8212;</p>
+            <p class="advantages__item-text advantages__item-text--short">Ехать в седону из Лас-вегаса совсем не&nbsp;скучно!</p>
+          </div>
+        </div>
+        <div class="advantages__item advantages__item--short">
+          <div class="advantages__text-wrapper advantages__text-wrapper--short">
+            <h3 class="advantages__item-header advantages__item-header--short">Мало туристов</h3>
+            <p class="advantages__item-number advantages__item-number--short">&#8212;№5&#8212;</p>
+            <p class="advantages__item-text advantages__item-text--short">Большинство едет в Гранд Каньон и толпится там</p>
+          </div>
+        </div>
+      </section>
+      <section class="hotel">
+        <h2 class="visually-hidden">Поиск гостиницы</h2>
+        <div class="hotel__content-wrapper">
+          <b class="hotel__bold">Заинтересовались?</b>
+          <p class="hotel__text">Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем&nbsp;вам&nbsp;лучшие предложения гостиниц в седоне</p>
+          <a class="hotel__button" href="#">Найти гостиницу</a>
+        </div>
+        <div class="hotel__map">
+
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <b class="footer__tag">#Visitsedona</b>
+      <ul class="footer__social">
+        <li class="footer__social-item" aria-label="twitter"><a href="#"></a></li>
+        <li class="footer__social-item" aria-label="facebook"><a href="#"></a></li>
+        <li class="footer__social-item"  aria-label="youtube"><a href="#"></a></li>
+      </ul>
+      <p class="footer__copyright">
+        Разработано
+      </p>
+    </footer>
   </body>
 </html>
